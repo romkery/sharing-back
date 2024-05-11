@@ -84,6 +84,16 @@
           "localized": false
         }
       }
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "location.location"
     }
   }
 }

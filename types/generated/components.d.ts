@@ -1,5 +1,17 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface ImagesImages extends Schema.Component {
+  collectionName: 'components_images_images';
+  info: {
+    displayName: 'images';
+    icon: 'landscape';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String;
+  };
+}
+
 export interface LocationLocation extends Schema.Component {
   collectionName: 'components_location_locations';
   info: {
@@ -16,6 +28,7 @@ export interface LocationLocation extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'images.images': ImagesImages;
       'location.location': LocationLocation;
     }
   }

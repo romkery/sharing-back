@@ -385,7 +385,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    description: Attribute.String &
+    description: Attribute.Text &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -398,12 +398,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
         };
       }>;
     isPublished: Attribute.Boolean &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    img_url: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -428,6 +422,12 @@ export interface ApiProductProduct extends Schema.CollectionType {
         };
       }>;
     location: Attribute.Component<'location.location'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    images: Attribute.Component<'images.images', true> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

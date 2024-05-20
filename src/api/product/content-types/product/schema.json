@@ -30,7 +30,7 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "text"
     },
     "isRent": {
       "pluginOptions": {
@@ -47,14 +47,6 @@
         }
       },
       "type": "boolean"
-    },
-    "img_url": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
     },
     "ownerId": {
       "pluginOptions": {
@@ -94,6 +86,17 @@
         }
       },
       "component": "location.location"
+    },
+    "images": {
+      "displayName": "images",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "images.images"
     }
   }
 }
